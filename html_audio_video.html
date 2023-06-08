@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    How can you add audio and video content to an HTML page?
+    
+    <video controls autoplay loop poster="video-poster.jpg" width="640" height="360">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+        <p>Your browser doesn't support HTML5 video. Here is a 
+            <a href="video.mp4">link to the video</a> instead.
+        </p>
+    </video>
+
+
+    Let's break down the options used in this example:
+
+    controls: Adds video controls (play/pause, volume, etc.) to the video player.
+    width="640" and height="360": Sets the width and height of the video player in pixels.
+    <source>: Specifies the video sources in different formats (mp4, webm, and ogv). The 
+    browser will choose the first compatible format.
+    <p>: A fallback message displayed if the browser doesn't support HTML5 video. It includes 
+    a link to download the video file.
+
+
+    autoplay: Automatically starts playing the video as soon as the page loads.
+    loop: Causes the video to restart from the beginning once it reaches the end, creating 
+    a continuous loop.
+    poster="video-poster.jpg": Sets a specific image (video-poster.jpg) as the video poster, 
+    which is displayed before the video starts playing.
+    
+    Note that the autoplay attribute may not work as expected on some browsers due to 
+    restrictions on automatically playing media. To provide a better user experience, 
+    it's advisable to include the controls attribute along with autoplay, allowing users 
+    to manually start or pause the video if autoplay is blocked.
+
+    Remember to adjust the source file paths (src) and the poster image path (poster) to 
+    match the actual file names and locations in your project.
+    
+
+    
+    You can further customize the <video> tag by using additional attributes like autoplay, 
+    loop, poster, etc., depending on your specific requirements.
+
+
+    <audio controls autoplay loop preload="auto" muted volume="0.5">
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <p>Your browser doesn't support HTML5 audio. Here is a <a href="audio.mp3">link to the audio</a> instead.</p>
+    </audio>
+      
+    autoplay: Automatically starts playing the audio as soon as the page loads.
+    
+    loop: Causes the audio to restart from the beginning once it reaches the end, creating 
+    a continuous loop.
+    preload: Specifies how the browser should load the audio file. The possible values 
+    are "none", "metadata", and "auto". "none" indicates that the audio should not be 
+    preloaded, "metadata" indicates that only metadata should be preloaded, and "auto" 
+    indicates that the entire audio file should be preloaded.
+
+    controls: Adds audio controls (play/pause, volume, etc.) to the audio player.
+    muted: Starts the audio in a muted state, requiring the user to manually unmute it.
+
+    volume: Sets the default volume level of the audio. The value can range from 0.0 (silent) 
+    to 1.0 (maximum volume).
+
+    src: Specifies the source URL of the audio file.
+
+</body>
+</html>
