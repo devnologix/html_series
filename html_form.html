@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Types</title>
+</head>
+
+<body>
+    <h1>Input Types</h1>
+
+    <form>
+        <!-- Text Input -->
+        <label for="text-input">Text Input:</label>
+        <input type="text" id="text-input" name="text-input" required><br><br>
+
+
+        <!-- The "required" attribute in an input field is used to specify that the input 
+        field must be filled out before submitting a form. When the "required" attribute 
+        is applied to an input element, the browser will enforce the validation and prevent 
+        form submission if the required field is left empty. This attribute is particularly 
+        useful for ensuring that necessary information is provided by the user. -->
+
+
+        <!-- Password Input -->
+        <label for="password-input">Password Input:</label>
+        <input type="password" id="password-input" name="password-input" disabled><br><br>
+
+        <!-- The "disabled" attribute in a form input field is used to disable the input 
+            field, preventing the user from interacting with or modifying its value. When 
+            the "disabled" attribute is applied to an input element, it becomes non-editable
+             and appears visually different to indicate that it cannot be interacted with. -->
+
+
+        <!-- Email Input -->
+        <label for="email-input">Email Input:</label>
+        <input type="email" id="email-input" name="email-input" autocomplete="email-input"><br><br>
+
+
+        <!-- The "autocomplete" attribute in an input field is used to control 
+            the autofill behavior of a browser. By specifying the "autocomplete" 
+            attribute, you can suggest or prevent the browser from autofilling the 
+            input field based on previously entered values.
+
+        The "autocomplete" attribute can take various values, such as "on" or "off", to 
+        indicate whether the browser should enable or disable autofill. Additionally, 
+        you can use specific values to suggest different types of information, such as 
+        "name", "email", "address", or "credit-card". -->
+
+
+        <!-- Number Input -->
+        <label for="number-input">Number Input:</label>
+        <input type="number" id="number-input" name="number-input"><br><br>
+
+        <!-- Checkbox -->
+        <label for="checkbox-input">Checkbox:</label>
+        <input type="checkbox" id="checkbox-input" name="checkbox-input"><br><br>
+
+        <!-- Radio Buttons -->
+        <label for="radio-input1">Radio Input 1:</label>
+        <input type="radio" id="radio-input1" name="radio-input" value="option1"><br>
+        <label for="radio-input2">Radio Input 2:</label>
+        <input type="radio" id="radio-input2" name="radio-input" value="option2"><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="select-input">Select Input:</label>
+        <select id="select-input" name="select-input">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br><br>
+
+        <!-- File Input -->
+        <label for="file-input">File Input:</label>
+        <input type="file" id="file-input" name="file-input"><br><br>
+
+        <!-- Date Input -->
+        <label for="date-input">Date Input:</label>
+        <input type="date" id="date-input" name="date-input"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
